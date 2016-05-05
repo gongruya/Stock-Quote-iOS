@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Stock chart</title>
+<style>
+body{margin:0;padding:0;}
+#container{margin:0;padding:0;width:100%;height:100%;position:absolute;-webkit-touch-callout:none;-webkit-user-select:none;}
+</style>
+</head>
+<body>
+<div id="container"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://code.highcharts.com/stock/highstock.js"></script>
+<script>
+$(document).ready(function() {
+    new Markit.InteractiveChartApi(window.location.hash.substr(1), 1095);
+});
+/** 
+ * Version 2.0
+ */
+var Markit = {};
+Markit.InteractiveChartApi = function(symbol,duration){
+    this.symbol = symbol.toUpperCase();
+    this.duration = duration;
+    this.PlotChart();
+};
+
+Markit.InteractiveChartApi.prototype.PlotChart = function(){
+    
+    var params = {
+        parameters: JSON.stringify(this.getInputParams()),
+        mode: "interactive"
+    }
+
+    //Make JSON request for timeseries data
+    $.ajax({
+        beforeSend:function(){
+            $("#container").html('<img src="loading.gif" alt="loading" height="60" width="60" style="position:absolute;top:50%;left:50%;margin:-30px 0 0 -30px">');
+        },
+        data: params,
+        url: "https://stock-handler.appspot.com/?callback=?",
+        dataType: "jsonp",
+        context: this,
+        success: function(json){
+            //Catch errors
+            if (!json || json.Message){
+                console.error("Error: ", json.Message);
+                return;
+            }
+            this.render(json);
+        },
+        error: function(response,txtStatus){
+            console.log(response,txtStatus)
+        }
+    });
+};
+
+Markit.InteractiveChartApi.prototype.getInputParams = function() {
+    return {  
+        Normalized: false,
+        NumberOfDays: this.duration,
+        DataPeriod: "Day",
+        Elements: [{Symbol: this.symbol, Type: "price", Params: ["ohlc"]}]
+    }
+};
+
+Markit.InteractiveChartApi.prototype._fixDate = function(dateIn) {
+    var dat = new Date(dateIn);
+    return Date.UTC(dat.getFullYear(), dat.getMonth(), dat.getDate());
+};
+
+Markit.InteractiveChartApi.prototype._getOHLC = function(json) {
+    var dates = json.Dates || [];
+    var elements = json.Elements || [];
+    var chartSeries = [];
+
+    if (elements[0]){
+        for (var i = 0, datLen = dates.length; i < datLen; i++) {
+            var dat = this._fixDate( dates[i] );
+            var pointData = [
+                dat,
+                elements[0].DataSeries['open'].values[i],
+                elements[0].DataSeries['high'].values[i],
+                elements[0].DataSeries['low'].values[i],
+                elements[0].DataSeries['close'].values[i]
+            ];
+            chartSeries.push( pointData );
+        };
+    }
+    return chartSeries;
+};
+
+Markit.InteractiveChartApi.prototype.render = function(data) {
+    //console.log(data)
+    // split the data set into ohlc
+    var ohlc = this._getOHLC(data);
+
+    // set the allowed units for data grouping
+    var groupingUnits = [['week', [1]], ['month', [1, 2, 3, 4, 6]]];
+
+    // create the chart
+    $('#container').highcharts('StockChart', {
+        rangeSelector: {
+            selected: 0,
+            buttons: [{type: 'week', count: 1, text: '1w'}, {type: 'month', count: 1, text: '1m'}, {type: 'month', count: 3, text: '3m'}, {type: 'month', count: 6, text: '6m'}, {type: 'ytd', text: 'YTD'}, {type: 'year', count: 1, text: '1y'}, {type: 'all', text: 'All'}],
+            inputEnabled : false
+        },
+        title: {text: this.symbol + ' Stock Value'},
+        //yAxis: [{title: {text: 'Stock Value'}, lineWidth: 2}],
+        series: [{
+            type: 'area', name: this.symbol, data: ohlc, dataGrouping: {units: groupingUnits },
+            fillColor : {
+                linearGradient: {x1: 0, y1: 0, x2: 0, y2: 1},
+                stops : [[0, Highcharts.getOptions().colors[0]], [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')] ]
+            },
+            threshold: null
+        }],
+        tooltip: {
+            pointFormat: '<span style="color:{point.color}">\u25CF</span> {series.name}: <b>${point.y}</b><br/>'
+        }
+    });
+};
+</script>
+</body>
+</html>

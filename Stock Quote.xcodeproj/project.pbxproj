@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF3F55FC1CC0A40600BCDD6A /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = CF3F55FB1CC0A40600BCDD6A /* loading.gif */; };
+		CF86CA4C1CD6B21B00D1EDFF /* GSSimpleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86CA4B1CD6B21B00D1EDFF /* GSSimpleImageView.swift */; };
+		CF9E8CEC1CBDFB1000D457EE /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E8CEB1CBDFB1000D457EE /* Stock.swift */; };
+		CF9E8D6D1CBE476800D457EE /* StockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E8D6C1CBE476800D457EE /* StockDetailViewController.swift */; };
+		CF9E8D6F1CBEFB9100D457EE /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E8D6E1CBEFB9100D457EE /* StockTableViewCell.swift */; };
+		CF9E8D711CBF6A3C00D457EE /* StockQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E8D701CBF6A3C00D457EE /* StockQuoteViewController.swift */; };
+		CF9E8D731CBF6A4A00D457EE /* HistoryChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E8D721CBF6A4A00D457EE /* HistoryChartViewController.swift */; };
+		CF9E8D751CBF6A5600D457EE /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E8D741CBF6A5600D457EE /* NewsFeedViewController.swift */; };
+		CF9E8D771CBF814300D457EE /* StockQuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E8D761CBF814300D457EE /* StockQuoteTableViewCell.swift */; };
+		CFA341CD1CB327F900F78A17 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA341CC1CB327F900F78A17 /* SwiftyJSON.swift */; };
 		CFDBDF521CB0FE1F00A2A154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDBDF511CB0FE1F00A2A154 /* AppDelegate.swift */; };
 		CFDBDF541CB0FE1F00A2A154 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDBDF531CB0FE1F00A2A154 /* ViewController.swift */; };
 		CFDBDF571CB0FE1F00A2A154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFDBDF551CB0FE1F00A2A154 /* Main.storyboard */; };
@@ -14,6 +24,12 @@
 		CFDBDF5C1CB0FE1F00A2A154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFDBDF5A1CB0FE1F00A2A154 /* LaunchScreen.storyboard */; };
 		CFDBDF671CB0FE1F00A2A154 /* Stock_QuoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDBDF661CB0FE1F00A2A154 /* Stock_QuoteTests.swift */; };
 		CFDBDF721CB0FE1F00A2A154 /* Stock_QuoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDBDF711CB0FE1F00A2A154 /* Stock_QuoteUITests.swift */; };
+		CFF9FE191CC01CD100ED27A6 /* chart.html in Resources */ = {isa = PBXBuildFile; fileRef = CFF9FE181CC01CD100ED27A6 /* chart.html */; };
+		CFF9FE1F1CC021C300ED27A6 /* NewsFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF9FE1E1CC021C300ED27A6 /* NewsFeedTableViewCell.swift */; };
+		CFF9FE211CC023DC00ED27A6 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF9FE201CC023DC00ED27A6 /* News.swift */; };
+		CFF9FE251CC054FC00ED27A6 /* StockQuoteChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF9FE241CC054FC00ED27A6 /* StockQuoteChartTableViewCell.swift */; };
+		CFF9FE281CC064EC00ED27A6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF9FE271CC064EC00ED27A6 /* FBSDKCoreKit.framework */; };
+		CFF9FE2A1CC06A1000ED27A6 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF9FE291CC06A1000ED27A6 /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +50,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF3F55FB1CC0A40600BCDD6A /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		CF86CA4B1CD6B21B00D1EDFF /* GSSimpleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSSimpleImageView.swift; sourceTree = "<group>"; };
+		CF9E8CEB1CBDFB1000D457EE /* Stock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		CF9E8D6C1CBE476800D457EE /* StockDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockDetailViewController.swift; sourceTree = "<group>"; };
+		CF9E8D6E1CBEFB9100D457EE /* StockTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
+		CF9E8D701CBF6A3C00D457EE /* StockQuoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockQuoteViewController.swift; sourceTree = "<group>"; };
+		CF9E8D721CBF6A4A00D457EE /* HistoryChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryChartViewController.swift; sourceTree = "<group>"; };
+		CF9E8D741CBF6A5600D457EE /* NewsFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
+		CF9E8D761CBF814300D457EE /* StockQuoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockQuoteTableViewCell.swift; sourceTree = "<group>"; };
+		CFA341CB1CB327F900F78A17 /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
+		CFA341CC1CB327F900F78A17 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		CFDBDF4E1CB0FE1F00A2A154 /* Stock Quote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stock Quote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFDBDF511CB0FE1F00A2A154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFDBDF531CB0FE1F00A2A154 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +74,12 @@
 		CFDBDF6D1CB0FE1F00A2A154 /* Stock QuoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stock QuoteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFDBDF711CB0FE1F00A2A154 /* Stock_QuoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock_QuoteUITests.swift; sourceTree = "<group>"; };
 		CFDBDF731CB0FE1F00A2A154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFF9FE181CC01CD100ED27A6 /* chart.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = chart.html; sourceTree = "<group>"; };
+		CFF9FE1E1CC021C300ED27A6 /* NewsFeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedTableViewCell.swift; sourceTree = "<group>"; };
+		CFF9FE201CC023DC00ED27A6 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		CFF9FE241CC054FC00ED27A6 /* StockQuoteChartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockQuoteChartTableViewCell.swift; sourceTree = "<group>"; };
+		CFF9FE271CC064EC00ED27A6 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../../FacebookSDKs-iOS-20160412/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		CFF9FE291CC06A1000ED27A6 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "../../../../FacebookSDKs-iOS-20160412/FBSDKShareKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFF9FE2A1CC06A1000ED27A6 /* FBSDKShareKit.framework in Frameworks */,
+				CFF9FE281CC064EC00ED27A6 /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +109,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF3F55FA1CC0A3E900BCDD6A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CF3F55FB1CC0A40600BCDD6A /* loading.gif */,
+				CFF9FE181CC01CD100ED27A6 /* chart.html */,
+			);
+			name = Assets;
+			path = "Stock Quote";
+			sourceTree = "<group>";
+		};
+		CF9E234A1CD6A526002B947D /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				CFA341CB1CB327F900F78A17 /* SwiftyJSON.h */,
+				CFA341CC1CB327F900F78A17 /* SwiftyJSON.swift */,
+				CF86CA4B1CD6B21B00D1EDFF /* GSSimpleImageView.swift */,
+			);
+			name = Libraries;
+			path = "Stock Quote";
+			sourceTree = "<group>";
+		};
 		CFDBDF451CB0FE1F00A2A154 = {
 			isa = PBXGroup;
 			children = (
+				CF9E234A1CD6A526002B947D /* Libraries */,
+				CF3F55FA1CC0A3E900BCDD6A /* Assets */,
 				CFDBDF501CB0FE1F00A2A154 /* Stock Quote */,
 				CFDBDF651CB0FE1F00A2A154 /* Stock QuoteTests */,
 				CFDBDF701CB0FE1F00A2A154 /* Stock QuoteUITests */,
+				CFF9FE261CC0646C00ED27A6 /* Frameworks */,
 				CFDBDF4F1CB0FE1F00A2A154 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,7 +158,17 @@
 			children = (
 				CFDBDF511CB0FE1F00A2A154 /* AppDelegate.swift */,
 				CFDBDF531CB0FE1F00A2A154 /* ViewController.swift */,
+				CF9E8D6E1CBEFB9100D457EE /* StockTableViewCell.swift */,
+				CF9E8CEB1CBDFB1000D457EE /* Stock.swift */,
 				CFDBDF551CB0FE1F00A2A154 /* Main.storyboard */,
+				CF9E8D6C1CBE476800D457EE /* StockDetailViewController.swift */,
+				CF9E8D761CBF814300D457EE /* StockQuoteTableViewCell.swift */,
+				CF9E8D701CBF6A3C00D457EE /* StockQuoteViewController.swift */,
+				CFF9FE241CC054FC00ED27A6 /* StockQuoteChartTableViewCell.swift */,
+				CF9E8D721CBF6A4A00D457EE /* HistoryChartViewController.swift */,
+				CF9E8D741CBF6A5600D457EE /* NewsFeedViewController.swift */,
+				CFF9FE1E1CC021C300ED27A6 /* NewsFeedTableViewCell.swift */,
+				CFF9FE201CC023DC00ED27A6 /* News.swift */,
 				CFDBDF581CB0FE1F00A2A154 /* Assets.xcassets */,
 				CFDBDF5A1CB0FE1F00A2A154 /* LaunchScreen.storyboard */,
 				CFDBDF5D1CB0FE1F00A2A154 /* Info.plist */,
@@ -123,6 +192,15 @@
 				CFDBDF731CB0FE1F00A2A154 /* Info.plist */,
 			);
 			path = "Stock QuoteUITests";
+			sourceTree = "<group>";
+		};
+		CFF9FE261CC0646C00ED27A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFF9FE291CC06A1000ED27A6 /* FBSDKShareKit.framework */,
+				CFF9FE271CC064EC00ED27A6 /* FBSDKCoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +271,7 @@
 				TargetAttributes = {
 					CFDBDF4D1CB0FE1F00A2A154 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = SX23BN954S;
 					};
 					CFDBDF611CB0FE1F00A2A154 = {
 						CreatedOnToolsVersion = 7.3;
@@ -231,7 +310,9 @@
 			files = (
 				CFDBDF5C1CB0FE1F00A2A154 /* LaunchScreen.storyboard in Resources */,
 				CFDBDF591CB0FE1F00A2A154 /* Assets.xcassets in Resources */,
+				CF3F55FC1CC0A40600BCDD6A /* loading.gif in Resources */,
 				CFDBDF571CB0FE1F00A2A154 /* Main.storyboard in Resources */,
+				CFF9FE191CC01CD100ED27A6 /* chart.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +337,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF9E8D6F1CBEFB9100D457EE /* StockTableViewCell.swift in Sources */,
+				CF9E8D6D1CBE476800D457EE /* StockDetailViewController.swift in Sources */,
+				CF9E8D711CBF6A3C00D457EE /* StockQuoteViewController.swift in Sources */,
+				CFA341CD1CB327F900F78A17 /* SwiftyJSON.swift in Sources */,
+				CFF9FE1F1CC021C300ED27A6 /* NewsFeedTableViewCell.swift in Sources */,
 				CFDBDF541CB0FE1F00A2A154 /* ViewController.swift in Sources */,
+				CFF9FE211CC023DC00ED27A6 /* News.swift in Sources */,
+				CFF9FE251CC054FC00ED27A6 /* StockQuoteChartTableViewCell.swift in Sources */,
+				CF9E8D731CBF6A4A00D457EE /* HistoryChartViewController.swift in Sources */,
+				CF9E8CEC1CBDFB1000D457EE /* Stock.swift in Sources */,
+				CF86CA4C1CD6B21B00D1EDFF /* GSSimpleImageView.swift in Sources */,
+				CF9E8D771CBF814300D457EE /* StockQuoteTableViewCell.swift in Sources */,
 				CFDBDF521CB0FE1F00A2A154 /* AppDelegate.swift in Sources */,
+				CF9E8D751CBF6A5600D457EE /* NewsFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,10 +492,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Stock",
+					Quote,
+					"/Users/gongruya/Documents/FacebookSDKs-iOS-20160412",
+				);
 				INFOPLIST_FILE = "Stock Quote/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ruyagong.Stock-Quote";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -410,10 +515,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Stock",
+					Quote,
+					"/Users/gongruya/Documents/FacebookSDKs-iOS-20160412",
+				);
 				INFOPLIST_FILE = "Stock Quote/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ruyagong.Stock-Quote";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -482,6 +598,7 @@
 				CFDBDF781CB0FE1F00A2A154 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFDBDF791CB0FE1F00A2A154 /* Build configuration list for PBXNativeTarget "Stock QuoteTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +607,7 @@
 				CFDBDF7B1CB0FE1F00A2A154 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFDBDF7C1CB0FE1F00A2A154 /* Build configuration list for PBXNativeTarget "Stock QuoteUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +616,7 @@
 				CFDBDF7E1CB0FE1F00A2A154 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
